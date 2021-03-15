@@ -31,6 +31,7 @@ function updateImageArray() {
 
     if (imageCount < currentImage) {
         currentImage = imageCount
+        updateImage()
     }
 }
 
@@ -41,7 +42,7 @@ function previousImage() {
         currentImage -= 1
     }
 
-    slider.style.backgroundImage = `url('img/${currentImage}.png')`
+    updateImage()
 }
 
 function nextImage() {
@@ -51,6 +52,10 @@ function nextImage() {
         currentImage += 1
     }
 
+    updateImage()
+}
+
+function updateImage() {
     slider.style.backgroundImage = `url('img/${currentImage}.png')`
 }
 
@@ -70,4 +75,3 @@ inputField.value = '1'
 inputField.addEventListener('input', updateImageCount)
 previousImageButton.addEventListener('click', previousImage)
 nextImageButton.addEventListener('click', nextImage)
-
