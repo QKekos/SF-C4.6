@@ -41,7 +41,7 @@ function previousImage() {
         currentImage -= 1
     }
 
-    slider.style.backgroundImage = `url('../img/${currentImage}.png')`
+    slider.style.backgroundImage = `url('img/${currentImage}.png')`
 }
 
 function nextImage() {
@@ -51,7 +51,7 @@ function nextImage() {
         currentImage += 1
     }
 
-    slider.style.backgroundImage = `url('../img/${currentImage}.png')`
+    slider.style.backgroundImage = `url('img/${currentImage}.png')`
 }
 
 let MAX_IMAGE_COUNT = 20
