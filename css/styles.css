@@ -42,7 +42,8 @@ body {
     width: 3vh;
 
     cursor: pointer;
-    /*opacity: 0;*/
+    opacity: 0;
+    transition: opacity 0.15s;
 
     display: flex;
     align-items: center;
